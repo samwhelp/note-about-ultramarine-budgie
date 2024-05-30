@@ -11,7 +11,6 @@ has_children: false
 ## 主題
 
 * [如何更改GRUB佈景主題](#如何更改grub佈景主題)
-* [完整腳本](#完整腳本)
 * [下載安裝](#下載安裝)
 * [設定採用](#設定採用)
 * [相關筆記](#相關筆記)
@@ -22,15 +21,6 @@ has_children: false
 ## 如何更改GRUB佈景主題
 
 > 以下以「[grub-theme-glass-remix](https://samwhelp.github.io/grub-theme-glass-remix/)」這個「GRUB 佈景主題」為例。
-
-
-
-
-## 完整腳本
-
-| 完整腳本 |
-| --- |
-| [grub-theme-glass-remix](https://github.com/samwhelp/ultramarine-budgie-adjustment/tree/main/prototype/main/grub-config/grub-theme/grub-theme-glass-remix) |
 
 
 
@@ -51,12 +41,12 @@ wget -c "https://github.com/samwhelp/grub-theme-glass-remix/archive/refs/heads/m
 tar xf "./tmp/grub-theme-glass-remix-main.tar.gz" -C "./tmp"
 
 
-## 確保有「/boot/grub/themes」這個「資料夾」
-sudo mkdir -p "/boot/grub/themes"
+## 確保有「/boot/grub2/themes」這個「資料夾」
+sudo mkdir -p "/boot/grub2/themes"
 
 
-## 將剛剛解開的「佈景主題」，安裝到「/boot/grub/themes/grub-theme-glass-remix」這個路徑。
-sudo cp -rf "./tmp/grub-theme-glass-remix-main/." "/boot/grub/themes/grub-theme-glass-remix"
+## 將剛剛解開的「佈景主題」，安裝到「/boot/grub2/themes/grub-theme-glass-remix」這個路徑。
+sudo cp -rf "./tmp/grub-theme-glass-remix-main/." "/boot/grub2/themes/grub-theme-glass-remix"
 
 ```
 
@@ -69,44 +59,46 @@ sudo cp -rf "./tmp/grub-theme-glass-remix-main/." "/boot/grub/themes/grub-theme-
 
 ## 設定採用
 
-可以編輯「`/etc/default/grub`」這個檔案，內容如下
+可以編輯「`/etc/default/grub`」這個檔案，
+
+原本的內容如下
 
 ``` sh
-GRUB_BACKGROUND='/boot/grub/themes/grub-theme-glass-remix/background.jpg'
-GRUB_THEME='/boot/grub/themes/grub-theme-glass-remix/theme.txt'
+GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
+GRUB_DEFAULT=saved
+GRUB_DISABLE_SUBMENU=true
+GRUB_TERMINAL_OUTPUT="console"
+GRUB_CMDLINE_LINUX="rhgb quiet"
+GRUB_DISABLE_RECOVERY="true"
+GRUB_ENABLE_BLSCFG=true
 ```
 
-或是產生「`/etc/default/grub.d/theme.cfg`」這個檔案, 執行
+其中原本有一行如下
 
 ``` sh
-
-## 確保有「/etc/default/grub.d」這個「資料夾」
-sudo mkdir -p /etc/default/grub.d
-
-
-## 產生「`/etc/default/grub.d/theme.cfg`」這個檔案
-cat << EOF | sudo tee /etc/default/grub.d/theme.cfg
-GRUB_BACKGROUND='/boot/grub/themes/grub-theme-glass-remix/background.jpg'
-GRUB_THEME='/boot/grub/themes/grub-theme-glass-remix/theme.txt'
-
-EOF
-
+GRUB_TERMINAL_OUTPUT="console"
 ```
 
-> 為何要同時設定「`GRUB_THEME`」和「`GRUB_BACKGROUND`」，請參考「[另一篇](https://samwhelp.github.io/note-about-grub/read/howto/use_background_image.html)」的說明。
-
-> 接著上面的步驟完成後，一定要執行下面的步驟，
-
-執行下面的指令，重新產生「`/boot/grub/grub.cfg`」這個檔案。
+將該行註解，改成如下
 
 ``` sh
-sudo update-grub
+#GRUB_TERMINAL_OUTPUT="console"
 ```
 
-若是沒有「`update-grub`」這個指令，可以改執行下面的指令
+接著加入下面一行，指定要採用的「GRUB 佈景主題」。
 
 ``` sh
-sudo grub-mkconfig -o /boot/grub/grub.cfg
+GRUB_THEME='/boot/grub2/themes/grub-theme-glass-remix/theme.txt'
+```
+
+
+> 上面的步驟完成後，接著一定要執行下面的步驟，
+
+執行下面的指令，重新產生「`/boot/grub2/grub.cfg`」這個檔案。
+
+``` sh
+sudo grub-mkconfig -o /boot/grub2/grub.cfg
 ```
 
 接著重新開機，就可以看到效果了。
