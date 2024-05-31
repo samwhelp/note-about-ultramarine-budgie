@@ -122,6 +122,7 @@ sudo grub-mkconfig -o /boot/grub2/grub.cfg
 | [Invoking grub-mkconfig](https://www.gnu.org/software/grub/manual/grub/html_node/Invoking-grub_002dmkconfig.html#Invoking-grub_002dmkconfig) |
 | [Theme file format](https://www.gnu.org/software/grub/manual/grub/html_node/Theme-file-format.html) |
 
+
 | Fedora Docs |
 | ----------- |
 | [The GRUB2 Bootloader – Installation and Configuration](https://docs.fedoraproject.org/en-US/quick-docs/grub2-bootloader/) |
