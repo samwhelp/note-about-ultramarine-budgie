@@ -73,5 +73,5 @@ parent: 設定
 
 | 相關議題 |
 | ------- |
-| [設定 Mouse Button Modifier](https://samwhelp.github.io/note-about-ultramarine-budgie/read/howto/config-mouse-button-modifier.html) |
-| [停用按鍵綁定「Super_L」開啟「Budgie Menu」](https://samwhelp.github.io/note-about-ultramarine-budgie/read/howto/disable-keybind-open-budgie-menu.html) |
+| [設定「Mouse Button Modifier」](https://samwhelp.github.io/note-about-ultramarine-budgie/read/howto/config-mouse-button-modifier.html) |
+| [停用按鍵綁定「Super_L」開啟「Main Menu」](https://samwhelp.github.io/note-about-ultramarine-budgie/read/howto/disable-keybind-open-main-menu.html) |
