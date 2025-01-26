@@ -13,6 +13,8 @@
 ## 主題
 
 * [微調腳本](#微調腳本)
+* [概覽](#概覽)
+* [如何](#如何)
 * [按鍵綁定](#按鍵綁定)
 * [字型](#字型)
 * [輸入法](#輸入法)
@@ -28,7 +30,30 @@
 
 | 微調腳本 |
 | -------- |
-| [Ultramarine Budgie](https://github.com/samwhelp/ultramarine-budgie-adjustment/tree/main/prototype/main/budgie-config/full/budgie-config-plus-theme-dark) |
+| [Ultramarine Budgie Config](https://github.com/samwhelp/ultramarine-budgie-adjustment/tree/main/prototype/main/budgie-config/full/budgie-config-plus-theme-dark) |
+
+
+
+
+## 概覽
+
+| [概覽](https://samwhelp.github.io/note-about-ultramarine-budgie/read/guide.html) |
+| ----------------- |
+| [如何微調](https://samwhelp.github.io/note-about-ultramarine-budgie/read/guide/customize.html) |
+| [工作流程](https://samwhelp.github.io/note-about-ultramarine-budgie/read/guide/workflow.html) |
+
+
+
+
+## 如何
+
+| [如何](https://samwhelp.github.io/note-about-ultramarine-budgie/read/howto.html) |
+| ------- |
+| [設定「Mouse Button Modifier」](https://samwhelp.github.io/note-about-ultramarine-budgie/read/howto/config-mouse-button-modifier.html) |
+| [停用按鍵綁定「Super_L」開啟「Main Menu」](https://samwhelp.github.io/note-about-ultramarine-budgie/read/howto/disable-keybind-open-main-menu.html) |
+| [設定「主要」的「按鍵綁定」](https://samwhelp.github.io/note-about-ultramarine-budgie/read/howto/config-keybind/config-keybind-main.html) |
+| [設定「自訂」的「按鍵綁定」](https://samwhelp.github.io/note-about-ultramarine-budgie/read/howto/config-keybind/config-keybind-custom.html) |
+| [設定「Application Appearance」](https://samwhelp.github.io/note-about-ultramarine-budgie/read/howto/config-application-appearance.html) |
 
 
 
