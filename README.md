@@ -6,6 +6,7 @@
 | ---- | ------ |
 | [Ultramarine Budgie Adjustment](https://samwhelp.github.io/ultramarine-budgie-adjustment/) | [GitHub](https://github.com/samwhelp/ultramarine-budgie-adjustment) |
 | [Ultramarine Budgie 探索筆記](https://samwhelp.github.io/note-about-ultramarine-budgie/) | [GitHub](https://github.com/samwhelp/note-about-ultramarine-budgie) |
+| [Ultramarine 探索筆記](https://samwhelp.github.io/note-about-ultramarine/) | [GitHub](https://github.com/samwhelp/note-about-ultramarine) |
 
 
 
@@ -124,7 +125,6 @@
 | ---- | ------ |
 | [System Modeling](https://samwhelp.github.io/system-modeling/) | [GitHub](https://github.com/samwhelp/system-modeling) |
 | [Budgie Desktop 探索筆記](https://samwhelp.github.io/note-about-budgie/) | [GitHub](https://github.com/samwhelp/note-about-budgie) |
-| [Ultramarine 探索筆記](https://samwhelp.github.io/note-about-ultramarine/) | [GitHub](https://github.com/samwhelp/note-about-ultramarine) |
 | [Fedora 探索筆記](https://samwhelp.github.io/note-about-fedora/) | [GitHub](https://github.com/samwhelp/note-about-fedora) |
 | [Ubuntu 探索筆記](https://samwhelp.github.io/note-about-ubuntu/) | [GitHub](https://github.com/samwhelp/note-about-ubuntu) |
 | [Debian 探索筆記](https://samwhelp.github.io/note-about-debian/) | [GitHub](https://github.com/samwhelp/note-about-debian) |
