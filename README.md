@@ -31,6 +31,7 @@
 | 微調腳本 |
 | -------- |
 | [Ultramarine Budgie Config](https://github.com/samwhelp/ultramarine-budgie-adjustment/tree/main/prototype/main/budgie-config/full/budgie-config-plus-theme-dark) |
+| [Tool Config](https://github.com/samwhelp/ultramarine-adjustment/tree/main/prototype/main/tool-config/part) |
 
 
 
