@@ -48,8 +48,10 @@
 
 ## 按鍵綁定
 
+> [鍵盤按鍵綁定一覽表](https://samwhelp.github.io/note-about-ultramarine-budgie/read/cheatsheet/keybind.html)
+
 | 按鍵綁定 |
-| --- |
+| ------- |
 | [鍵盤按鍵綁定](https://samwhelp.github.io/note-about-ultramarine-budgie/read/config/keybind.html) |
 | [滑鼠按鍵綁定](https://samwhelp.github.io/note-about-ultramarine-budgie/read/config/mousebind.html) |
 
